@@ -687,7 +687,7 @@ a {
     height: 125px;
     transform-origin: center 2500px;
     /* half of 5000px */
-    transform: rotate(calc(var(--i) * 18deg)); /* Increased spacing between items */
+    transform: rotate(calc(var(--i) * 10deg)); /* Adjusted spacing for desktop to prevent overlap */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1325,6 +1325,9 @@ a {
 }
 
 @media screen and (max-width: 1100px) {
+    .arc-card {
+        transform: rotate(calc(var(--i) * 18deg)); /* Keep wider for mobile */
+    }
 
     .winding-item.pos-1,
     .winding-item.pos-2,
